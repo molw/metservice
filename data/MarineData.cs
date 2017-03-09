@@ -14,30 +14,30 @@ public class MarineData{
     public DateTime time_of_observation { get; set; }
     public double sea_level_pressure { get; set; }
     public int characteristics_of_pressure_tendency { get; set; }
-    public double pressure_tendency{ get; set; }
-    public air_temperature                      | double precision         | 
-    public wet_bulb_temperature                 | double precision         | 
-    public dew_point_temperature                | double precision         | 
-    public sea_surface_temperature              | double precision         | 
-    public wave_direction                       | character varying        | 
-    public wave_period                          | character varying        | 
-    public wave_height                          | double precision         | 
-    public swell_direction                      | character varying        | 
-    public swell_period                         | character varying        | 
-    public swell_height                         | double precision         | 
-    public total_cloud_amount                   | smallint                 | 
-    public low_cloud_amount                     | smallint                 | 
-    public low_cloud_type                       | character varying        | 
-    public cloud_height_indicator               | character varying        | 
-    public cloud_height                         | character varying        | 
-    public middle_cloud_type                    | character varying        | 
-    public high_cloud_type                      | character varying        | 
-    public visibility                           | character varying        | 
-    public visibility_indicator                 | character varying        | 
-    public present_weather                      | character varying        | 
-    public past_weather                         | character varying        | 
-    public wind_direction                       | integer                  | 
-    public wind_speed                           | double precision         | 
+    public double pressure_tendency { get; set; }
+    public double air_temperature { get; set; }
+    public double wet_bulb_temperature { get; set; }
+    public double dew_point_temperature { get; set; }
+    public double sea_surface_temperature { get; set; }
+    public string wave_direction { get; set; }
+    public string wave_period { get; set; }
+    public double wave_height { get; set; }
+    public string swell_direction { get; set; }
+    public string swell_period { get; set; }
+    public double swell_height { get; set; }
+    public int total_cloud_amount { get; set; }
+    public int low_cloud_amount { get; set; }
+    public string low_cloud_type { get; set; }
+    public string cloud_height_indicator { get; set; }
+    public string cloud_height { get; set; }
+    public string middle_cloud_type { get; set; }
+    public string high_cloud_type { get; set; }
+    public string visibility { get; set; }
+    public string visibility_indicator { get; set; }
+    public string present_weather { get; set; }
+    public string past_weather { get; set; }
+    public int wind_direction { get; set; }
+    public double wind_speed { get; set; }
 
 
 

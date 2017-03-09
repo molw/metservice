@@ -6,23 +6,24 @@ namespace org.molw.metserivce.controllers
     [Route("api/[controller]")]
     public class MetController : Controller
     {
-        private static List<Note> _notes;
+        private static List<MarineData> _marineData;
         static MetController()
         {
-            _notes = new List<Note>();
+            _marineData = new List<MarineData>();
         }
 
 
         [HttpGet]
-        public IEnumerable<Note> GetAll()
+        public IEnumerable<MarineData> GetAll()
         {
-            return _notes.AsReadOnly();
+            return _marineData.AsReadOnly();
         }
 
-        [HttpGet("{id}", Name = "GetNote")]
-        public IActionResult GetById(string id)
+        //TODO this needs to be fixed here. id is fine but I think the interior method needs to be fixed
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
         {
-            var item = _notes.Find(n => n.Id == id);
+            var item = _marineData.Find(n => n.marine_observation_id == id);
             if (item == null)
             {
                 return NotFound();
@@ -30,8 +31,9 @@ namespace org.molw.metserivce.controllers
             return new ObjectResult(item);
         }
 
+/*  I don't need these methods since this endpoint is read only
         [HttpPost]
-        public IActionResult Create([FromBody] Note item)
+        public IActionResult Create([FromBody] MarineData item)
         {
             if (item == null)
             {
@@ -47,11 +49,7 @@ namespace org.molw.metserivce.controllers
         {
             _notes.RemoveAll(n => n.Id == id);
         }
-
-        public class Note
-        {
-            public string Id { get; set; }
-            public string Content { get; set; }
-        }
+ */
+   
     }
 }
