@@ -1,5 +1,5 @@
---temp-output:/home/spousty/git/molw/weatherservice/obj/Debug/netcoreapp1.1/
---out:/home/spousty/git/molw/weatherservice/bin/Debug/netcoreapp1.1/weatherservice.dll
+--temp-output:/home/spousty/git/MOLW/metservice/obj/Debug/netcoreapp1.1/
+--out:/home/spousty/git/MOLW/metservice/bin/Debug/netcoreapp1.1/metservice.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_1
@@ -9,7 +9,7 @@
 --optimize:False
 --debug-type:portable
 --emit-entry-point:True
---output-name:weatherservice
+--output-name:metservice
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -161,5 +161,6 @@
 --reference:/home/spousty/.nuget/packages/System.Threading.Timer/4.3.0/ref/netstandard1.2/System.Threading.Timer.dll
 --reference:/home/spousty/.nuget/packages/System.Xml.ReaderWriter/4.3.0/ref/netstandard1.3/System.Xml.ReaderWriter.dll
 --reference:/home/spousty/.nuget/packages/System.Xml.XDocument/4.3.0/ref/netstandard1.3/System.Xml.XDocument.dll
-/home/spousty/git/molw/weatherservice/Program.cs
-/home/spousty/git/molw/weatherservice/controllers/weathercontroller.cs
+/home/spousty/git/MOLW/metservice/Program.cs
+/home/spousty/git/MOLW/metservice/controllers/WeatherController.cs
+/home/spousty/git/MOLW/metservice/data/MarineData.cs

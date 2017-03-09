@@ -12,14 +12,13 @@ namespace org.molw.metserivce.controllers
             _marineData = new List<MarineData>();
         }
 
-
+        //TODO this methods should never be called bc it will try to return 1.2 gigs of data. We should probably limit this to 100 values or something
         [HttpGet]
         public IEnumerable<MarineData> GetAll()
         {
             return _marineData.AsReadOnly();
         }
-
-        //TODO this needs to be fixed here. id is fine but I think the interior method needs to be fixed
+        
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
